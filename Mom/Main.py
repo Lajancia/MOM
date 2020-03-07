@@ -38,6 +38,8 @@ n=int(n)
 k=int(k)# n과 k를 입력의 첫 줄에서 읽어들인다
 L=input().split()
 
+#현재 Atom에서는 input()이 작동하지 않으므로 직접 n,k,L의 값을 입력해야만 정상 작동한다.
+
 for i in range(len(L)):
 	L[i]=int(L[i])# n개의 정수를 읽어들인다. (split 이용 + int로 변환)
 print(MoM(L, k))
